@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export default function Header() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="text-white text-xl font-serif font-semibold">
+      <header className="bg-[#161A30] p-4 flex">
+        <div className='w-1/6 flex'>
+          <p className='ml-3'>logo</p>
+          <p className='items-start tracking-tight hover:tracking-wide w-fit ml-3'>twiit</p>
+        </div>
+        <div className='w-5/6 flex justify-end'>
+          <p>logo</p>
+          <p className='ml-4 mr-3'>username</p>
+        </div>
       </header>
     </div>
   );
 }
-
-export default App;
